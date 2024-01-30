@@ -4,11 +4,36 @@
     padding: 0;
 }
 
+:root {
+    ---first-color: #f9f9f9;
+    ---second-color: #14161f;
+    ---border-color: rgba(0, 0, 0, .2);
+}
+
 body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: var(---second-color);
+    background-color: var(---first-color);
+}
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #293038;
+    flex-direction: column;
+    margin-bottom: 40px;
+    height: 220px;
 }
+
+header p {
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2 .title
